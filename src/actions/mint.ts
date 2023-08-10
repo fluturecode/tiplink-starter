@@ -25,9 +25,7 @@ import {
 } from "@metaplex-foundation/mpl-token-metadata";
 
 import { TipLink } from "@tiplink/api";
-
 import { keypairFromEnvironment } from '@/util/keypair-from-envrironment';
-
 import { config } from "@/config";
 
 const payerKeypair = keypairFromEnvironment("PAYER_KEYPAIR");

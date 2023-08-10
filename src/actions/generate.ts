@@ -1,15 +1,9 @@
 "use server"
 
 import type { AssetMetadata, AttributesMap, GenerateMediaResponse } from '@/types';
-
-import path from "path";
-
 import sharp from "sharp";
-
 import { config } from '@/config';
-
 import { uploadFile } from "@/actions/upload";
-
 import { uniqueNamesGenerator, adjectives, colors, animals } from "unique-names-generator";
 
 export const generateMetadata = async ({

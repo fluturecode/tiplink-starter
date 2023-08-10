@@ -1,14 +1,10 @@
 "use server"
 
 import ShortUniqueId from "short-unique-id";
-
 import { ShdwDrive, ShadowFile } from "@shadow-drive/sdk";
-
 import { keypairFromEnvironment } from "@/util/keypair-from-envrironment";
 import { Connection, PublicKey } from "@solana/web3.js";
-
 import * as anchor from "@coral-xyz/anchor";
-
 import { config } from "@/config";
 
 const keypair = keypairFromEnvironment("PAYER_KEYPAIR");
